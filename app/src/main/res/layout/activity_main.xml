@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/weightEditTextView"
+        style="@style/edit_text_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:hint="@string/hint_weight"
+        android:inputType="numberDecimal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/heightEditTextView"
+        style="@style/edit_text_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:hint="@string/hint_height"
+        android:inputType="numberDecimal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weightEditTextView" />
+    <Spinner
+        android:id="@+id/sexSpinner"
+        android:entries="@array/sexes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginEnd="@dimen/default_margin"
+        app:layout_constraintEnd_toEndOf="@+id/heightEditTextView"
+        app:layout_constraintStart_toStartOf="@+id/heightEditTextView"
+        app:layout_constraintTop_toBottomOf="@+id/heightEditTextView" />
+
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/content_description_calculate_button"
+        android:text="@string/calculate_button_text"
+        app:layout_constraintTop_toBottomOf="@+id/sexSpinner"
+        app:layout_constraintStart_toStartOf="@+id/sexSpinner"
+        app:layout_constraintEnd_toEndOf="@+id/sexSpinner"/>
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:contentDescription="@string/content_description_clear_button"
+        android:text="@string/clear_button_text"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/calculateButton"
+        app:layout_constraintStart_toStartOf="@+id/calculateButton"
+        app:layout_constraintTop_toBottomOf="@id/calculateButton" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

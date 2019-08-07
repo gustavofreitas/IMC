@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">IMC</string>
+
+    <string name="hint_weight">Peso</string>
+    <string name="content_description_height">Insira a Altura</string>
+    <string name="hint_height">Altura</string>
+    <string name="calculate_button_text">CALCULATE</string>
+    <string name="content_description_calculate_button">Toque para calcular</string>
+    <string name="clear_button_text">CLEAR</string>
+    <string name="content_description_clear_button">Toque para limpar os campos</string>
+    <string name="content_description_result">Toque para limpar os campos</string>
+
+    <string name="spinner_value_m">Masculino</string>
+    <string name="spinner_value_f">Feminino</string>
+    <string name="weight_low">Abaixo do Peso</string>
+    <string name="weight_normal">Normal</string>
+    <string name="weight_sobre">sobrepeso</string>
+    <string name="weight_obeso">Obeso</string>
+    <string name="weight_extremo">Obesidade extrema</string>
+</resources>
